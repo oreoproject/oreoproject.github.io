@@ -1,0 +1,1290 @@
+<style>
+  body,
+  html {
+    min-height: 100vh
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: radial-gradient(ellipse at bottom, #1b2735 0, #090a0f 100%)
+  }
+
+  #root {
+    min-height: 100vh
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+  }
+
+  .Home_main__22AIT {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: stretch;
+    align-items: stretch
+  }
+
+  .Home_announcement__2ZOBl {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: rgba(0, 0, 0, .9);
+    z-index: 100
+  }
+
+  .Home_announcement__2ZOBl.Home_hide__3s8XZ {
+    display: none
+  }
+
+  .Home_announcement__2ZOBl p {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    margin: 100px auto
+  }
+
+  .Header_main__1gM0k {
+    width: calc(100% - 20px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+  }
+
+  .LogoWithBrand_main__6cG1X {
+    color: #afa7ca;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end
+  }
+
+  .LogoWithBrand_main__6cG1X .LogoWithBrand_brand__XI6bh {
+    margin: auto auto 13px;
+    background: linear-gradient(225deg, #3ad38c, #25e4f5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+  }
+
+  .NavLinks_main__2Yz5p {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    margin-top: 20px
+  }
+
+  .NavLinks_main__2Yz5p a {
+    color: #afa7ca;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 40px 0 0
+  }
+
+  .NavLinks_main__2Yz5p a:hover {
+    -webkit-filter: brightness(90%);
+    filter: brightness(90%)
+  }
+
+  .NavLinks_main__2Yz5p a:active {
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%)
+  }
+
+  @media (max-width:850px) {
+    .NavLinks_main__2Yz5p {
+      display: none
+    }
+  }
+
+  .LanguageDropdown_main__2syEG .LanguageDropdown_button__3E7jP {
+    color: #afa7ca;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 0 8px
+  }
+
+  .LanguageDropdown_main__2syEG {
+    color: #afa7ca;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block
+  }
+
+  .LanguageDropdown_main__2syEG:hover {
+    -webkit-filter: brightness(90%);
+    filter: brightness(90%)
+  }
+
+  .LanguageDropdown_main__2syEG:active {
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%)
+  }
+
+  .LanguageDropdown_link__1ZEc4 {
+    color: #afa7ca;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    border-top: 1px solid #afa7ca
+  }
+
+  .LanguageDropdown_link__1ZEc4:hover {
+    color: #fff
+  }
+
+  .LanguageDropdown_link__1ZEc4:active {
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%)
+  }
+
+  .Body_main__2MalV {
+    width: calc(100% - 20px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px
+  }
+
+  .Jumbotron_main__3rk6K {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
+  .Title_main__azm_N {
+    color: #f8f0f0;
+    font-size: 54px
+  }
+
+  .Subtitle_main__khk8U,
+  .Title_main__azm_N {
+    margin: 15px auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400
+  }
+
+  .Subtitle_main__khk8U {
+    color: #d3bebe;
+    font-size: 40px
+  }
+
+  @media (max-width:650px) {
+    .Subtitle_main__khk8U {
+      font-size: 35px
+    }
+  }
+
+  .Space_space__1Cjxi {
+    width: 100%;
+    height: 50px
+  }
+
+  .Separator_wrapper__dRDDr {
+    width: 100%
+  }
+
+  .Separator_wrapper__dRDDr .Separator_image__2H8WJ {
+    display: block;
+    margin: 0 auto
+  }
+
+  .Introduction_main__1S6Qz ul {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    list-style: none
+  }
+
+  .Introduction_main__1S6Qz li {
+    width: 43%;
+    padding: 35px;
+    color: #fff;
+    background: #191c25;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .3);
+    border-radius: 6px
+  }
+
+  .Introduction_main__1S6Qz h5 {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 20px;
+    background: linear-gradient(225deg, #3ad38c, #25e4f5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+  }
+
+  .Introduction_main__1S6Qz p {
+    margin: 0;
+    color: #afa7ca;
+    line-height: 23px
+  }
+
+  @media (max-width:650px) {
+    .Introduction_main__1S6Qz ul {
+      flex-flow: column
+    }
+
+    .Introduction_main__1S6Qz li {
+      width: auto;
+      padding: 30px
+    }
+
+    .Introduction_main__1S6Qz li:not(:last-child) {
+      margin-bottom: 15px
+    }
+  }
+
+  .Heading_main__3OxZF {
+    background: linear-gradient(225deg, #3ad38c, #25e4f5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 15px auto;
+    font-size: 34px
+  }
+
+  .Heading_main__3OxZF,
+  .Subheading_main__2HTxq {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400
+  }
+
+  .Subheading_main__2HTxq {
+    color: #afa7ca;
+    margin: 10px auto;
+    font-size: 24px
+  }
+
+  .SskToken_main__ytBYS ul {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    list-style: none
+  }
+
+  .SskToken_main__ytBYS li {
+    width: 25%;
+    padding: 35px;
+    color: #fff;
+    background: #191c25;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .3);
+    border-radius: 6px
+  }
+
+  .SskToken_main__ytBYS h5 {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 20px;
+    background: linear-gradient(225deg, #3ad38c, #25e4f5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+  }
+
+  .SskToken_main__ytBYS p {
+    text-align: center;
+    margin: 0;
+    color: #afa7ca;
+    line-height: 23px
+  }
+
+  @media (max-width:650px) {
+    .SskToken_main__ytBYS ul {
+      flex-flow: column
+    }
+
+    .SskToken_main__ytBYS li {
+      width: auto;
+      padding: 20px
+    }
+
+    .SskToken_main__ytBYS li:not(:last-child) {
+      margin-bottom: 15px
+    }
+  }
+
+  .TokenDistribution_listWrapper__2EZfV {
+    margin: 0 auto;
+    max-width: 900px
+  }
+
+  .TokenDistribution_listWrapper__2EZfV .TokenDistribution_intro__2QrTs {
+    color: #afa7ca;
+    margin: 0 0 30px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400
+  }
+
+  .TokenDistribution_listWrapper__2EZfV .TokenDistribution_point__3SW4n {
+    color: #afa7ca;
+    line-height: 25px;
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400
+  }
+
+  .TokenDistribution_listWrapper__2EZfV .TokenDistribution_point__3SW4n:last-child {
+    margin: 0 0 15px
+  }
+
+  .TokenDistribution_listWrapper__2EZfV .TokenDistribution_point__3SW4n:not(:last-child) {
+    margin: 0 0 12px
+  }
+
+  .TokenDistribution_listWrapper__2EZfV .TokenDistribution_point__3SW4n a {
+    color: #afa7ca;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-filter: brightness(1.15);
+    filter: brightness(1.15)
+  }
+
+  .TokenDistribution_listWrapper__2EZfV .TokenDistribution_point__3SW4n a:hover {
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2)
+  }
+
+  .TokenDistribution_listWrapper__2EZfV .TokenDistribution_point__3SW4n a:active {
+    -webkit-filter: brightness(1.3);
+    filter: brightness(1.3)
+  }
+
+  .BulletItem_main__1SDq2 {
+    list-style: none;
+    display: flex;
+    margin: 15px 0
+  }
+
+  .BulletItem_main__1SDq2 .BulletItem_bullet__3ltFL {
+    margin-right: 20px
+  }
+
+  .Swap_introWrapper__1qLku {
+    margin: 0 auto;
+    max-width: 900px
+  }
+
+  .Swap_introWrapper__1qLku .Swap_alert__1Iz3t {
+    color: #dcd8e7;
+    margin: 0 0 18px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400
+  }
+
+  .Swap_introWrapper__1qLku .Swap_address__3ljoz {
+    margin: 0 0 18px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400
+  }
+
+  .Swap_introWrapper__1qLku .Swap_address__3ljoz a {
+    color: #afa7ca;
+    text-decoration: none;
+    font-weight: 600;
+    -webkit-filter: brightness(1.15);
+    filter: brightness(1.15);
+    word-wrap: break-word
+  }
+
+  .Swap_introWrapper__1qLku .Swap_address__3ljoz a:hover {
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2)
+  }
+
+  .Swap_introWrapper__1qLku .Swap_address__3ljoz a:active {
+    -webkit-filter: brightness(1.3);
+    filter: brightness(1.3)
+  }
+
+  .Swap_introWrapper__1qLku .Swap_intro__Bk3yG {
+    color: #afa7ca;
+    margin: 0 0 30px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400
+  }
+
+  .Swap_inputWrapper__1eV2w {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none
+  }
+
+  .Swap_swapIcon__10o3h {
+    cursor: pointer;
+    -webkit-filter: brightness(1.5);
+    filter: brightness(1.5)
+  }
+
+  .Swap_swapIcon__10o3h:hover {
+    -webkit-filter: brightness(1.7);
+    filter: brightness(1.7)
+  }
+
+  .Swap_swapIcon__10o3h:active {
+    -webkit-filter: brightness(2);
+    filter: brightness(2)
+  }
+
+  .Swap_plusIcon__3fEqG,
+  .Swap_slashIcon__20e4r {
+    -webkit-filter: brightness(1.5);
+    filter: brightness(1.5)
+  }
+
+  @media (max-width:900px) {
+    .Swap_inputWrapper__1eV2w {
+      flex-flow: column
+    }
+
+    .Swap_slashIcon__20e4r,
+    .Swap_swapIcon__10o3h {
+      transform: rotate(90deg);
+      margin: 15px 0
+    }
+
+    .Swap_plusIcon__3fEqG {
+      margin: 15px 0
+    }
+  }
+
+  .Swap_infoWrapper__1riTf {
+    max-width: 450px;
+    margin: 30px auto 0
+  }
+
+  .Swap_buttonWrapper__1WQib {
+    margin: 30px auto 0
+  }
+
+  .Swap_buttonWrapper__1WQib>:not(:last-child) {
+    margin-bottom: 20px
+  }
+
+  .SwapBox_main__4QgEr {
+    width: 38%;
+    padding: 28px 35px;
+    color: #fff;
+    background: #191c25;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    border: 1px solid rgba(175, 167, 202, .4)
+  }
+
+  .SwapBox_labelRow__12RNI {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center
+  }
+
+  .SwapBox_balanceLabel__-TBkh,
+  .SwapBox_label__2Gg91 {
+    margin: 0 0 18px
+  }
+
+  .SwapBox_amountRow__1hW_Z {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center
+  }
+
+  .SwapBox_amountInput__38bk4 {
+    width: 100%;
+    color: #fff;
+    position: relative;
+    font-weight: 500;
+    outline: medium none currentcolor;
+    border: none;
+    flex: 1 1 auto;
+    background-color: transparent;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield
+  }
+
+  .SwapBox_tokenSymbol__2KR60 {
+    margin: 0 0 0 15px;
+    font-size: 22px;
+    font-weight: 500
+  }
+
+  @media (max-width:900px) {
+    .SwapBox_main__4QgEr {
+      width: 80%
+    }
+  }
+
+  .Button_main__jCn4d {
+    width: 100%;
+    max-width: 450px;
+    height: 55px;
+    margin: 0 auto;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #d3bebe;
+    -webkit-filter: brightness(.9);
+    filter: brightness(.9);
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    border: 1px solid rgba(175, 167, 202, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+  .Button_main__jCn4d.Button_disabled__3awaz {
+    cursor: not-allowed
+  }
+
+  .Button_main__jCn4d:hover:not(.Button_disabled__3awaz) {
+    -webkit-filter: brightness(.95);
+    filter: brightness(.95)
+  }
+
+  .Button_main__jCn4d:active:not(.Button_disabled__3awaz) {
+    -webkit-filter: brightness(1);
+    filter: brightness(1)
+  }
+
+  .Button_main__jCn4d p {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    color: #0b0d13
+  }
+
+  .InfoBox_main__1cyQp {
+    width: calc(100% - 60px);
+    padding: 20px 30px;
+    color: #fff;
+    background: #191c25;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    border: 1px solid rgba(175, 167, 202, .4);
+    display: flex;
+    flex-flow: column
+  }
+
+  .InfoBox_row__1Qdzr {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 8px 0
+  }
+
+  .InfoBox_row__1Qdzr p {
+    margin: 0
+  }
+
+  .Tabs_main__2agPI {
+    display: flex;
+    flex-flow: column
+  }
+
+  .Tabs_tabs__2iBl- {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 10px auto 25px
+  }
+
+  .Tabs_tabs__2iBl- p {
+    color: #afa7ca;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 5px;
+    margin-bottom: 5px
+  }
+
+  .Tabs_tabs__2iBl-.Tabs_large__1HXsk p {
+    font-size: 22px
+  }
+
+  .Tabs_tabs__2iBl-.Tabs_small__1rCRx p {
+    font-size: 18px
+  }
+
+  .Tabs_tabs__2iBl- p:hover {
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1)
+  }
+
+  .Tabs_tabs__2iBl- p:active {
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2)
+  }
+
+  .Tabs_tabs__2iBl- p.Tabs_active__2QGls {
+    font-weight: 600;
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1)
+  }
+
+  .Tabs_tabs__2iBl- p:first-child {
+    margin-right: 15px
+  }
+
+  .Tabs_tabs__2iBl- p:last-child {
+    margin-left: 15px
+  }
+
+  .Tabs_tabs__2iBl- p:not(:first-child):not(:last-child) {
+    margin-left: 15px;
+    margin-right: 15px
+  }
+
+  .PoolBox_main__1Xo4R {
+    width: 38%;
+    padding: 28px 35px;
+    color: #fff;
+    background: #191c25;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    border: 1px solid rgba(175, 167, 202, .4)
+  }
+
+  .PoolBox_labelRow__3GRh0 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center
+  }
+
+  .PoolBox_balanceLabel__1i--x,
+  .PoolBox_label__2YE30 {
+    margin: 0 0 18px
+  }
+
+  .PoolBox_amountRow__1W_FT {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center
+  }
+
+  .PoolBox_amountInput__1YYpm {
+    width: 100%;
+    color: #fff;
+    position: relative;
+    font-weight: 500;
+    outline: medium none currentcolor;
+    border: none;
+    flex: 1 1 auto;
+    background-color: transparent;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield
+  }
+
+  .PoolBox_tokenSymbol__1HcUm {
+    margin: 0 0 0 15px;
+    font-size: 22px;
+    font-weight: 500
+  }
+
+  @media (max-width:900px) {
+    .PoolBox_main__1Xo4R {
+      width: 80%
+    }
+  }
+
+  .FAQs_faqWrapper__3NBmo {
+    margin: 0 auto;
+    max-width: 600px
+  }
+
+  .FAQ_main__s-U3I {
+    width: 100%
+  }
+
+  .FAQItem_item__1A3FE {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 12px 0;
+    width: 100%
+  }
+
+  .FAQItem_item__1A3FE .FAQItem_questionWrapper__344kN {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer
+  }
+
+  .FAQItem_item__1A3FE .FAQItem_bullet__29o9I {
+    margin: 0 20px 0 10px;
+    transition: all .3s ease
+  }
+
+  .FAQItem_item__1A3FE .FAQItem_bullet__29o9I.FAQItem_open__7M_tF {
+    transform: rotate(180deg)
+  }
+
+  .FAQItem_item__1A3FE .FAQItem_question__33WtB {
+    color: #afa7ca;
+    margin: 0;
+    line-height: 30px;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500
+  }
+
+  .FAQItem_item__1A3FE:hover .FAQItem_question__33WtB {
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1)
+  }
+
+  .FAQItem_item__1A3FE:active .FAQItem_question__33WtB {
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2)
+  }
+
+  .FAQItem_item__1A3FE .FAQItem_answerWrapper__3Fhgi {
+    width: auto;
+    padding-left: 70px;
+    display: none
+  }
+
+  .FAQItem_item__1A3FE .FAQItem_answerWrapper__3Fhgi.FAQItem_open__7M_tF {
+    display: block
+  }
+
+  .FAQItem_item__1A3FE .FAQItem_answerWrapper__3Fhgi p {
+    color: #afa7ca;
+    line-height: 25px;
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400
+  }
+
+  @media (max-width:650px) {
+    .FAQItem_item__1A3FE .FAQItem_answerWrapper__3Fhgi {
+      padding-left: 10px
+    }
+  }
+
+  .Roadmap_listWrapper__2uNTO {
+    margin: 0 auto;
+    max-width: 600px
+  }
+
+  .Roadmap_listWrapper__2uNTO p {
+    color: #afa7ca;
+    line-height: 25px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400
+  }
+
+  .Roadmap_listWrapper__2uNTO .Roadmap_date__8JVD- {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 12px
+  }
+
+  .Roadmap_listWrapper__2uNTO .Roadmap_content__1M0-C {
+    font-size: 18px;
+    margin: 0 0 15px
+  }
+
+  .Whitepaper_listWrapper__uVob_ {
+    margin: 0 auto;
+    max-width: 900px
+  }
+
+  .Whitepaper_listWrapper__uVob_ .Whitepaper_intro__1Pb2L {
+    color: #afa7ca;
+    margin: 0 0 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400
+  }
+
+  .Whitepaper_intro__1Pb2L a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #afa7ca;
+    font-weight: 600;
+    -webkit-filter: brightness(1.15);
+    filter: brightness(1.15)
+  }
+
+  .Whitepaper_intro__1Pb2L a:hover {
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2)
+  }
+
+  .Whitepaper_intro__1Pb2L a:active {
+    -webkit-filter: brightness(1.3);
+    filter: brightness(1.3)
+  }
+
+  .Footer_main__3ksU_ {
+    width: calc(100% - 20px);
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, .45);
+    padding: 0 10px
+  }
+
+  .Footer_main__3ksU_ .Footer_content__2e5_o {
+    color: #4b4f64;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+  }
+
+  .Footer_copyRight__2MhcN {
+    width: 100%;
+    margin: 0
+  }
+
+  .Footer_icons__3AAik {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end
+  }
+
+  .Footer_icon__XNEoC {
+    margin-left: 20px
+  }
+</style>
+<html>
+
+<body>
+  <div id="root">
+    <div class="Home_main__22AIT">
+      <div class="Header_main__1gM0k">
+        <div class="LogoWithBrand_main__6cG1X">
+          <div><img src="https://cdn2.liuliangbang.vip/picture/204c38fd9ac73033c3bd0638dde468de-1611738426636.png"
+              width="80" alt="Logo"></div>
+          <div>
+            <h1 class="LogoWithBrand_brand__XI6bh">SunStake</h1>
+          </div>
+        </div>
+        <div class="NavLinks_main__2Yz5p"><a href="#ssk-token">SSK 令牌</a><a href="#swap">交换</a><a
+            href="#faqs">常见问题</a><a href="#roadmap">愿景与计划</a><a href="#whitepaper">白皮书</a><a href="#whitepaper">简体中文</a>
+          <div>
+            <div class="LanguageDropdown_main__2syEG"></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="Body_main__2MalV">
+        <div class="Jumbotron_main__3rk6K">
+          <h1 class="Title_main__azm_N">SunStake 网络</h1>
+          <div class="Space_space__1Cjxi"></div>
+          <div style="max-width: 800px;">
+            <h2 class="Subtitle_main__khk8U">以去中心化金融为SUN社区提供无限可能性</h2>
+          </div>
+        </div>
+        <div class="Space_space__1Cjxi"></div>
+        <div class="Space_space__1Cjxi"></div>
+        <div class="Space_space__1Cjxi"></div>
+        <div class="Button_main__jCn4d ">
+          <p>立即获取 SSK 令牌</p>
+        </div>
+        <div class="Space_space__1Cjxi"></div>
+        <div class="Space_space__1Cjxi"></div>
+        <div class="Separator_wrapper__dRDDr"><img class="Separator_image__2H8WJ"
+            src="https://cdn2.liuliangbang.vip/picture/2585224ff221cd8b9ba00dc99f034c3d-1611739128299.png" width="150"
+            height="60" alt="separator"></div>
+        <div class="Introduction_main__1S6Qz">
+          <h2 class="Heading_main__3OxZF">什么是 SunStake</h2>
+          <h3 class="Subheading_main__2HTxq">一种基于Tron的合成资产协议</h3>
+          <div class="Space_space__1Cjxi"></div>
+          <div>
+            <ul>
+              <li>
+                <h5>SunStake网络是什么？</h5>
+                <p>SunStake是围绕SUN社区构建的基于Tron的合成资产协议。
+                  SunStake将使SUN代币持有者能够创建和持有可追踪现实世界中几乎所有资产的合成资产。通过这样做，他们还可以获得利息形式的被动收入。</p>
+              </li>
+              <li>
+                <h5>是什么使SunStake与众不同？</h5>
+                <p>使SunStake与众不同的一个重要原因是，使用SUN令牌作为抵押。
+                  SunStake允许所有现有的SUN令牌持有者直接参与，而不用强迫用户在允许其做有意义的事情之前先购买由协议发行的可能易于操纵的令牌。</p>
+              </li>
+            </ul>
+          </div>
+          <div class="Space_space__1Cjxi"></div>
+        </div>
+        <div id="ssk-token" class="Separator_wrapper__dRDDr"><img class="Separator_image__2H8WJ"
+            src="https://cdn2.liuliangbang.vip/picture/2585224ff221cd8b9ba00dc99f034c3d-1611739128299.png" width="150"
+            height="60" alt="separator"></div>
+        <div class="SskToken_main__ytBYS">
+          <h2 class="Heading_main__3OxZF">什么是 SSK 令牌</h2>
+          <h3 class="Subheading_main__2HTxq">SunStake网络的核心</h3>
+          <div class="Space_space__1Cjxi"></div>
+          <div>
+            <ul>
+              <li>
+                <h5>激励机制</h5>
+                <p>像其他任何去中心化应用程序一样，SunStake网络也是基于激励机制构建的。 SSK令牌主要用于保持社区利益一致并奖励维护网络的人员。</p>
+              </li>
+              <li>
+                <h5>治理</h5>
+                <p>SunStake网络最终将发展成为一个分散的自治组织 (DAO) ，SSK持有者将有权就该平台的几乎任何方面进行集体决策。</p>
+              </li>
+              <li>
+                <h5>还有更多...</h5>
+                <p>SunStake平台在设计时考虑了模块化和可升级性，这将使有关SSK令牌应用的新想法能够以最小的移植工作量实施。</p>
+              </li>
+            </ul>
+          </div>
+          <div class="Space_space__1Cjxi"></div>
+        </div>
+        <div class="Separator_wrapper__dRDDr"></div>
+        <div>
+          <h2 class="Heading_main__3OxZF">令牌分布</h2>
+          <h3 class="Subheading_main__2HTxq">没有代币销售，流动性资金由团队支付</h3>
+          <div class="Space_space__1Cjxi"></div>
+          <div class="TokenDistribution_listWrapper__2EZfV">
+            <p class="TokenDistribution_intro__2QrTs">根据SUN社区的理念，SunStake致力于最大程度地分散权力。 没有令牌销售。 总共将发行<strong>
+                1000万</strong>个SSK令牌：</p>
+            <ul style="padding-left: 20px;">
+              <li class="BulletItem_main__1SDq2"><img class="BulletItem_bullet__3ltFL"
+                  src="https://cdn2.liuliangbang.vip/picture/0731273a29871f7315f65b51bcebe269-1611739568712.png"
+                  width="11" height="27" alt="Bullet">
+                <div>
+                  <p class="TokenDistribution_point__3SW4n"><strong> 300万</strong> (30%) SSK代币已铸造并存入Justswap交易所。
+                    该团队还预先将<strong> 100万</strong> TRX存入了资金池，以提供初始流动性。</p>
+                  <p class="TokenDistribution_point__3SW4n">请注意，如果社区提供了足够的流动性，则团队可能会从流动性池中退出。 在这种情况下，从池中提取的SSK代币将被销毁。
+                  </p>
+                </div>
+              </li>
+              <li class="BulletItem_main__1SDq2"><img class="BulletItem_bullet__3ltFL"
+                  src="https://cdn2.liuliangbang.vip/picture/0731273a29871f7315f65b51bcebe269-1611739568712.png"
+                  width="11" height="27" alt="Bullet">
+                <div>
+                  <p class="TokenDistribution_point__3SW4n"><strong>500万</strong> (5%) SSK 代币将被空投到现有SUN代币持有者。点击<a
+                      href="https://sunstake.medium.com/the-ssk-airdrop-plan-f3aa326f871a" target="_blank"
+                      rel="noopener noreferrer">这里</a>阅读更多关于空投的信息。</p>
+                </div>
+              </li>
+              <li class="BulletItem_main__1SDq2"><img class="BulletItem_bullet__3ltFL"
+                  src="https://cdn2.liuliangbang.vip/picture/0731273a29871f7315f65b51bcebe269-1611739568712.png"
+                  width="11" height="27" alt="Bullet">
+                <div>
+                  <p class="TokenDistribution_point__3SW4n"><strong>100万</strong> (10%) SSK 代币被保留给团队。
+                    此部分仅在平台在Tron主网上启动后铸造，并将逐步发行。</p>
+                </div>
+              </li>
+              <li class="BulletItem_main__1SDq2"><img class="BulletItem_bullet__3ltFL"
+                  src="https://cdn2.liuliangbang.vip/picture/0731273a29871f7315f65b51bcebe269-1611739568712.png"
+                  width="11" height="27" alt="Bullet">
+                <div>
+                  <p class="TokenDistribution_point__3SW4n"><strong>550万</strong> (55%) SSK 代币被保留用于激励措施。</p>
+                  <p class="TokenDistribution_point__3SW4n">和保留给团队的代币铸造过程一样，这些代币将仅在主网启动后铸造。 代币合约将被锁定，因此在此之前无法铸造。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="Space_space__1Cjxi"></div>
+        </div>
+        <div id="swap" class="Separator_wrapper__dRDDr"></div>
+        <div>
+          <h2 class="Heading_main__3OxZF">交换</h2>
+          <h3 class="Subheading_main__2HTxq">TRX和SSK之间的交换无忧</h3>
+          <div class="Space_space__1Cjxi"></div>
+          <div class="Swap_introWrapper__1qLku">
+            <p class="Swap_alert__1Iz3t">目前在官方的 Justswap 网站上列出了多个 <strong>个伪造的 SSK 代币</strong> 。 保持警惕，不要陷入骗局。
+              请确保使用此代币地址：</p>
+            <p class="Swap_address__3ljoz"><a href="https://tronscan.org/#/token20/TW1sqqq7UphAqGNHDXSLXsEainYHJuQeyC"
+                target="_blank" rel="noopener noreferrer">TW1sqqq7UphAqGNHDXSLXsEainYHJuQeyC</a></p>
+            <p class="Swap_intro__Bk3yG"> 由于团队做了初始流动性，所以您也可以直接在这里使用和Justswap相同的模式直接交换TRX和SSK。</p>
+          </div>
+          <div class="Tabs_main__2agPI">
+            <div class="Tabs_tabs__2iBl- Tabs_large__1HXsk">
+              <p class="Tabs_active__2QGls">交换</p>
+              <p class="">资金池</p>
+            </div>
+            <div>
+              <div>
+                <div class="Swap_inputWrapper__1eV2w">
+                  <div class="SwapBox_main__4QgEr">
+                    <div class="SwapBox_labelRow__12RNI">
+                      <p class="SwapBox_label__2Gg91">From</p>
+                      <p class="SwapBox_balanceLabel__-TBkh">Balance: -</p>
+                    </div>
+                    <div class="SwapBox_amountRow__1hW_Z"><input class="SwapBox_amountInput__38bk4" inputmode="decimal"
+                        autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0"
+                        minlength="1" maxlength="79" spellcheck="false" value="">
+                      <div>
+                        <p class="SwapBox_tokenSymbol__2KR60">TRX</p>
+                      </div>
+                    </div>
+                  </div><svg id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"
+                    class="Swap_swapIcon__10o3h" fill="#4b4f64" stroke="#4b4f64" width="38" height="35">
+                    <g>
+                      <g>
+                        <g></g>
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+                  <div class="SwapBox_main__4QgEr">
+                    <div class="SwapBox_labelRow__12RNI">
+                      <p class="SwapBox_label__2Gg91">To</p>
+                      <p class="SwapBox_balanceLabel__-TBkh">Balance: -</p>
+                    </div>
+                    <div class="SwapBox_amountRow__1hW_Z"><input class="SwapBox_amountInput__38bk4" inputmode="decimal"
+                        autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0"
+                        minlength="1" maxlength="79" spellcheck="false" value="">
+                      <div>
+                        <p class="SwapBox_tokenSymbol__2KR60">SSK</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Swap_buttonWrapper__1WQib">
+                  <div class="Button_main__jCn4d ">
+                    <p>安装波宝钱包</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Space_space__1Cjxi"></div>
+          <div class="Space_space__1Cjxi"></div>
+        </div>
+        <div id="faqs" class="Separator_wrapper__dRDDr"></div>
+        <div>
+          <h2 class="Heading_main__3OxZF">常见问题</h2>
+          <h3 class="Subheading_main__2HTxq">没有回答您的问题吗？那么来我们的社区询问吧！</h3>
+          <div class="Space_space__1Cjxi"></div>
+          <div class="FAQs_faqWrapper__3NBmo" style="max-width: 800px; margin: 0px auto;">
+            <div class="FAQ_main__s-U3I">
+              <div class="FAQItem_item__1A3FE">
+                <div class="FAQItem_questionWrapper__344kN"><img class="BulletItem_bullet__3ltFL"
+                    src="https://cdn2.liuliangbang.vip/picture/0731273a29871f7315f65b51bcebe269-1611739568712.png"
+                    width="11" height="27" alt="Bullet">
+                  <p class="FAQItem_question__33WtB">SunStake试图解决什么问题？</p>
+                </div>
+                <div class="FAQItem_answerWrapper__3Fhgi ">
+                  <p>加密社区已经发展了多年。 现在，我们拥有比以往更多的可在区块链上使用的数字资产。 但是，从整个金融市场的角度来看，加密资产仍然是相当适合的市场。</p>
+                  <p>区块链是与外界隔离的自给自足的系统。 因此，首先可以在链上使用和交换的资产仅限于源自区块链世界的资产。 除非您像Tether (USDT) 那样依赖第三方充当桥梁。
+                    迄今为止，这种机制还可以正常工作，但是依赖和信任是危险的，这种机制可能破坏区块链构建的初衷。</p>
+                  <p>SunStake网络的成立旨在将链下资产带到区块链上，而无需依赖第三方，而是基于一致的激励机制和精心设计的算法。</p>
+                </div>
+              </div>
+              <div class="FAQItem_item__1A3FE">
+                <div class="FAQItem_questionWrapper__344kN"><img class="BulletItem_bullet__3ltFL"
+                    src="https://cdn2.liuliangbang.vip/picture/0731273a29871f7315f65b51bcebe269-1611739568712.png"
+                    width="11" height="27" alt="Bullet">
+                  <p class="FAQItem_question__33WtB">如何获得SSK代币？</p>
+                </div>
+                <div class="FAQItem_answerWrapper__3Fhgi ">
+                  <p>SunStake不进行代币销售。您可以在 Justswap上用TRX兑换SSK的方式获得SSK代币。</p>
+                  <p>此外，现有SUN代币持有者将收到占令牌供应总量5%的空投。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Space_space__1Cjxi"></div>
+        </div>
+        <div id="roadmap" class="Separator_wrapper__dRDDr"><img class="Separator_image__2H8WJ"
+            src="https://cdn2.liuliangbang.vip/picture/2585224ff221cd8b9ba00dc99f034c3d-1611739128299.png" width="150"
+            height="60" alt="separator"></div>
+        <div>
+          <h2 class="Heading_main__3OxZF">愿景与计划</h2>
+          <div class="Space_space__1Cjxi"></div>
+          <div class="Roadmap_listWrapper__2uNTO">
+            <ul style="padding-left: 20px;">
+              <li class="BulletItem_main__1SDq2"><img class="BulletItem_bullet__3ltFL"
+                  src="https://cdn2.liuliangbang.vip/picture/0731273a29871f7315f65b51bcebe269-1611739568712.png"
+                  width="11" height="27" alt="Bullet">
+                <div>
+                  <p class="Roadmap_date__8JVD-">2020 年 9 月</p>
+                  <p class="Roadmap_content__1M0-C">项目启动 令牌空投</p>
+                </div>
+              </li>
+              <li class="BulletItem_main__1SDq2"><img class="BulletItem_bullet__3ltFL"
+                  src="https://cdn2.liuliangbang.vip/picture/0731273a29871f7315f65b51bcebe269-1611739568712.png"
+                  width="11" height="27" alt="Bullet">
+                <div>
+                  <p class="Roadmap_date__8JVD-">2021 年 1 月</p>
+                  <p class="Roadmap_content__1M0-C"> 合成资产发行平台启动</p>
+                </div>
+              </li>
+              <li class="BulletItem_main__1SDq2"><img class="BulletItem_bullet__3ltFL"
+                  src="https://cdn2.liuliangbang.vip/picture/0731273a29871f7315f65b51bcebe269-1611739568712.png"
+                  width="11" height="27" alt="Bullet">
+                <div>
+                  <p class="Roadmap_date__8JVD-">2021年 3 月</p>
+                  <p class="Roadmap_content__1M0-C">推出类似Justswap的合成资产交易所</p>
+                </div>
+              </li>
+              <li class="BulletItem_main__1SDq2"><img class="BulletItem_bullet__3ltFL"
+                  src="https://cdn2.liuliangbang.vip/picture/0731273a29871f7315f65b51bcebe269-1611739568712.png"
+                  width="11" height="27" alt="Bullet">
+                <div>
+                  <p class="Roadmap_date__8JVD-">2022 年 1 月</p>
+                  <p class="Roadmap_content__1M0-C">转换为 DAO</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="Space_space__1Cjxi"></div>
+        </div>
+        <div id="whitepaper" class="Separator_wrapper__dRDDr"><img class="Separator_image__2H8WJ"
+            src="https://cdn2.liuliangbang.vip/picture/2585224ff221cd8b9ba00dc99f034c3d-1611739128299.png" width="150"
+            height="60" alt="separator"></div>
+        <div>
+          <h2 class="Heading_main__3OxZF">白皮书</h2>
+          <div class="Whitepaper_listWrapper__uVob_">
+            <p class="Whitepaper_intro__1Pb2L">了解更多关于 SunStake <a href="https://github.com/SunStake/whitepaper"
+                target="_blank" rel="noopener noreferrer">点击这里</a>！</p>
+          </div>
+          <div class="Space_space__1Cjxi"></div>
+        </div>
+        <div class="Space_space__1Cjxi"></div>
+      </div>
+      <div class="Footer_main__3ksU_">
+        <div class="Footer_content__2e5_o">
+          <p class="Footer_copyRight__2MhcN">Copyright © 2020 SunStake</p>
+          <div class="Footer_icons__3AAik"><a class="Footer_icon__XNEoC" href="https://github.com/SunStake"
+              target="_blank" rel="noopener noreferrer"><svg enable-background="new 0 0 24 24" height="35"
+                viewBox="0 0 24 24" width="38" fill="#4b4f64" stroke="#4b4f64">
+                <path
+                  d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                  fill="#212121"></path>
+              </svg></a><a class="Footer_icon__XNEoC" href="https://t.me/SunStakeNetwork" target="_blank"
+              rel="noopener noreferrer"><svg enable-background="new 0 0 24 24" height="35" viewBox="0 0 24 24"
+                width="38" fill="#4b4f64" stroke="#4b4f64">
+                <path
+                  d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"
+                  fill="#039be5"></path>
+              </svg></a><a class="Footer_icon__XNEoC" href="https://sunstake.medium.com" target="_blank"
+              rel="noopener noreferrer"><svg enable-background="new 0 0 24 24" height="35" viewBox="0 0 24 24"
+                width="38" fill="#4b4f64" stroke="#4b4f64">
+                <path
+                  d="m22.085 4.733 1.915-1.832v-.401h-6.634l-4.728 11.768-5.379-11.768h-6.956v.401l2.237 2.693c.218.199.332.49.303.783v10.583c.069.381-.055.773-.323 1.05l-2.52 3.054v.396h7.145v-.401l-2.52-3.049c-.273-.278-.402-.663-.347-1.05v-9.154l6.272 13.659h.729l5.393-13.659v10.881c0 .287 0 .346-.188.534l-1.94 1.877v.402h9.412v-.401l-1.87-1.831c-.164-.124-.249-.332-.214-.534v-13.467c-.035-.203.049-.411.213-.534z"
+                  fill="#212121"></path>
+              </svg></a><a class="Footer_icon__XNEoC" href="https://twitter.com/SunStakeNetwork" target="_blank"
+              rel="noopener noreferrer"><svg enable-background="new 0 0 24 24" height="35" viewBox="0 0 24 24"
+                width="38" fill="#4b4f64" stroke="#4b4f64">
+                <path
+                  d="m21.552 7.749c0-.217-.008-.428-.018-.636.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.752.206-1.678.198-2.221.078.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 9.054 0 14.004-7.5 14.004-14.001z"
+                  fill="#55acee"></path>
+              </svg></a></div>
+        </div>
+      </div>
+      <div style="z-index: -1; position: absolute; width: 100%;"><img
+          src="https://cdn2.liuliangbang.vip/picture/00498cbb7f564273cc20115d46eeb0ce-1611738852289.png"
+          alt="Background" style="width: 100%;"></div>
+    </div>
+  </div>
+  <div role="presentation" class="MuiPopover-root" id="language-menu" aria-hidden="true"
+    style="position: fixed; z-index: 1300; inset: 0px; visibility: hidden;">
+    <div tabindex="0" data-test="sentinelStart"></div>
+    <div class="MuiPaper-root MuiMenu-paper jss1 MuiPopover-paper MuiPaper-elevation0 MuiPaper-rounded" tabindex="-1"
+      style="opacity: 0; transform: scale(0.75, 0.5625); visibility: hidden;">
+      <ul class="MuiList-root MuiMenu-list MuiList-padding" role="menu" tabindex="-1">
+        <li
+          class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root jss2 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+          tabindex="0" role="menuitem" aria-disabled="false" value="English">English<span
+            class="MuiTouchRipple-root"></span></li>
+        <li
+          class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root jss2 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+          tabindex="-1" role="menuitem" aria-disabled="false" value="Chinese">简体中文<span
+            class="MuiTouchRipple-root"></span></li><a
+          href="https://sunstake.medium.com/you-are-wanted-help-us-translate-the-sunstake-website-9fad29230fa3"
+          target="_blank" rel="noopener noreferrer" class="LanguageDropdown_link__1ZEc4"><span>+</span></a>
+      </ul>
+    </div>
+    <div tabindex="0" data-test="sentinelEnd"></div>
+  </div>
+
+  <script type="text/javascript" src="./web3.min.js"></script>
+  <script type="text/javascript" src="./web3modal.min.js"></script>
+  <script type="text/javascript" src="./evm-chain.min.js"></script>
+  <script type="text/javascript" src="./web3-provider.min.js"></script>
+  <script type="text/javascript" src="./fortmatic.js"></script>
+
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
